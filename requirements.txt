@@ -1,0 +1,8 @@
+# Tudo o que vai dentro da pasta .venv (que não vai para o GitHub).
+# Para recriar em outro computador:
+#   python -m venv .venv
+#   .venv\Scripts\activate          (Linux/Mac: source .venv/bin/activate)
+#   pip install -r requirements.txt
+psycopg2-binary==2.9.13
+pymongo==4.20.1
+python-dotenv==1.2.4

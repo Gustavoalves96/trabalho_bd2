@@ -1,0 +1,28 @@
+services:
+  postgres:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: agiota
+      POSTGRES_PASSWORD: agiota
+      POSTGRES_DB: agiota
+    ports:
+      # porta do computador vem do .env (PG_PORT), útil se a 5432 já estiver ocupada
+      - "${PG_PORT:-5432}:5432"
+    volumes:
+      # os scripts desta pasta rodam sozinhos, em ordem alfabética, na primeira subida
+      - ./sql:/docker-entrypoint-initdb.d
+      - pg_dados:/var/lib/postgresql/data
+
+  mongo:
+    image: mongo:7
+    environment:
+      MONGO_INITDB_DATABASE: agiota
+    ports:
+      - "27017:27017"
+    volumes:
+      - ./mongo:/docker-entrypoint-initdb.d
+      - mongo_dados:/data/db
+
+volumes:
+  pg_dados:
+  mongo_dados:
