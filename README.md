@@ -1,11 +1,9 @@
-# Sistema do Agiota — Trabalho Final de Banco de Dados II
+# Sistema do Agiota: Trabalho Final de Banco de Dados II
 
 ## Integrantes
 
-- _Nome do integrante 1_
-- _Nome do integrante 2_
-- _Nome do integrante 3_
-- _Nome do integrante 4_
+- _Gustavo Machado Alves_
+
 
 ## Tema da aplicação
 
@@ -195,17 +193,17 @@ A aplicação **não valida nada no Python** de propósito: quem recusa os dados
 
 | O professor pede | Onde mostrar |
 |---|---|
-| Acesso ao PostgreSQL | Menu 4 → 1 (versão e contagem das tabelas) |
-| Acesso ao MongoDB | Menu 4 → 1 (versão e contagem das coleções) |
-| Operações no PostgreSQL | Menu 2 → 4 a 11 (CRUD de cobradores, clientes, empréstimos); Menu 3 → 2 (pagamento) |
-| Consulta com JOIN | Menu 2 → 8 (clientes com cobrador), 10 (empréstimos); Menu 1 → 5 (parcelas); Menu 3 → 1 (rota) |
-| RESTRICT e CASCADE | Menu 2 → 7 excluindo o Jaiminho (falha); Menu 2 → 11 (parcelas somem junto) |
-| Operações no MongoDB | Menu 1 → 1 a 4 (insert, find, update, delete); Menu 3 → 3 a 5 |
-| Integração entre os bancos | Menu 2 → 2 (aprovar), 12 (ficha do devedor), 13 (relatório) |
-| Validação `$jsonSchema` | Menu 4 → 3 (lê o validador do próprio banco) |
-| Inserir documento inválido | Menu 4 → 2 (mostra cada regra que falhou); ou Menu 1 → 1 digitando dados errados |
-| Expressão regular | Menu 4 → 4 (testa valores com cada regex) |
-| Índice e finalidade | Menu 4 → 5 (lista os índices e mostra `IXSCAN` no `explain`) |
+| Acesso ao PostgreSQL | Menu 4, opção 1 (versão e contagem das tabelas) |
+| Acesso ao MongoDB | Menu 4, opção 1 (versão e contagem das coleções) |
+| Operações no PostgreSQL | Menu 2, opções 4 a 11 (CRUD de cobradores, clientes, empréstimos); Menu 3, opção 2 (pagamento) |
+| Consulta com JOIN | Menu 2, opções 8 (clientes com cobrador), 10 (empréstimos); Menu 1, opção 5 (parcelas); Menu 3, opção 1 (rota) |
+| RESTRICT e CASCADE | Menu 2, opção 7 excluindo o Jaiminho (falha); Menu 2, opção 11 (parcelas somem junto) |
+| Operações no MongoDB | Menu 1, opções 1 a 4 (insert, find, update, delete); Menu 3, opções 3 a 5 |
+| Integração entre os bancos | Menu 2, opções 2 (aprovar), 12 (ficha do devedor), 13 (relatório) |
+| Validação `$jsonSchema` | Menu 4, opção 3 (lê o validador do próprio banco) |
+| Inserir documento inválido | Menu 4, opção 2 (mostra cada regra que falhou); ou Menu 1, opção 1 digitando dados errados |
+| Expressão regular | Menu 4, opção 4 (testa valores com cada regex) |
+| Índice e finalidade | Menu 4, opção 5 (lista os índices e mostra `IXSCAN` no `explain`) |
 
 Dados de exemplo para usar: CPF `111.222.333-44` (cliente com parcela atrasada), cobrador **Jaiminho** (tem rota com atraso), solicitação pendente de **João da Silva** (com veículo).
 
